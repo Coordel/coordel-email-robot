@@ -1,5 +1,5 @@
-![Build Status](https://secure.travis-ci.org/jeffgorder/coordel-email-robot.png)](http://travis-ci.org/jeffgorder/coordel-email-robot)
+![Build Status](https://secure.travis-ci.org/jeffgorder/coordel-email-robot.png)
 
-![coordel logo](/images/black-30.png)
+![coordel logo](http://beta.coordel.com/clients/web/0.0.1/css/images/logos/black-30.png)
 
   Email notifications and sending for Coordel applications.
