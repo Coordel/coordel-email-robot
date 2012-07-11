@@ -10,7 +10,7 @@
     }
   , "licenses": [{ "type": "MIT" }]
   , "bugs": {
-      "web" : "http://github.com/jeffgorder/coordel-email-robot/issues"
+      "url" : "http://github.com/jeffgorder/coordel-email-robot/issues"
     }
   , "private": true
   , "dependencies": {
@@ -20,5 +20,8 @@
   , "devDependencies": {
       "mocha": "*"
     , "should": "*"
+    }
+  , "scripts": {
+      "test": "make test"
     }
 }
