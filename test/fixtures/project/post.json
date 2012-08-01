@@ -1,0 +1,109 @@
+{
+  "change": {
+     "_id": "5de7629e94e88f7db2acceab7a01e198",
+     "_rev": "66-a7c3bb5ad599e6608d1cfff02a4a2aa6",
+     "docType": "project",
+     "responsible": "1",
+     "users": [
+         "1",
+         "2"
+     ],
+     "assignments": [
+         {
+             "username": "1",
+             "role": "RESPONSIBLE",
+             "status": "ACCEPTED"
+         },
+         {
+             "username": "2",
+             "role": "FOLLOWER",
+             "status": "INVITE"
+         }
+     ],
+     "name": "Test Invite",
+     "purpose": "Here is the purpose of the test invite. It should have a bit of information.\n\nThis should be the second line.",
+     "deadline": "2012-07-31",
+     "history": [
+         {
+             "actor": {
+                 "id": "1",
+                 "name": "Jeff Gorder",
+                 "type": "PERSON"
+             },
+             "object": {
+                 "id": "5de7629e94e88f7db2acceab7a01e198",
+                 "name": "Test Invite",
+                 "type": "PROJECT"
+             },
+             "time": "2012-07-20T11:44:02.330-04:00",
+             "users": [
+                 "1",
+                 "2"
+             ],
+             "verb": "POST",
+             "icon": "ui-icon-plus",
+             "body": ""
+         },
+         {
+             "actor": {
+                 "id": "1",
+                 "name": "Jeff Gorder",
+                 "type": "PERSON"
+             },
+             "object": {
+                 "id": "2",
+                 "name": "Dev Coordel",
+                 "type": "PERSON"
+             },
+             "time": "2012-07-20T11:43:29.557-04:00",
+             "users": [
+                 "1",
+                 "2"
+             ],
+             "target": {
+                 "id": "5de7629e94e88f7db2acceab7a01e198",
+                 "name": "Test Invite",
+                 "type": "PROJECT"
+             },
+             "verb": "INVITE",
+             "icon": "ui-icon-arrowreturnthick-1-e"
+         }
+     ],
+     "status": "ACTIVE",
+     "substatus": "SENT",
+     "isMyDelegated": false,
+     "isMyPrivate": false,
+     "isTemplate": false,
+     "created": "2012-07-20T11:43:33.182-04:00",
+     "updated": "2012-07-25T06:49:43.278-04:00",
+     "creator": "1",
+     "updater": "1",
+     "isNew": false,
+     "calendar": {
+         "start": "2012-07-31T00:00:00-04:00"
+     }
+  },
+  "username" : "2",
+  "alert" : {
+    "actor": {
+         "id": "1",
+         "name": "Jeff Gorder",
+         "type": "PERSON"
+     },
+     "object": {
+         "id": "5de7629e94e88f7db2acceab7a01e198",
+         "name": "Test Invite",
+         "type": "PROJECT"
+     },
+     "time": "2012-07-20T11:44:02.330-04:00",
+     "users": [
+         "1",
+         "2"
+     ],
+     "verb": "POST",
+     "icon": "ui-icon-plus",
+     "body": ""
+   }
+}
+  
+   

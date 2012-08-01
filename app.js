@@ -1,36 +1,50 @@
+var flatiron = require('flatiron'),
+    app = flatiron.app,
+    ecstatic = require('ecstatic');
+var settings    = require('./config/index').settings("settings", "./config"),
+    couchOpts   = settings.config.couchOptions,
+    couchName   = settings.config.couchName,
+    cradle      = require('cradle').setup(couchOpts),
+    cn          = new cradle.Connection(),
+    couch       = cn.database(couchName),
+    follow      = require('follow'),
+    Alert       = require('./lib/alert');
 
-/**
- * Module dependencies.
- */
-
-var express = require('express')
-  , routes = require('./routes');
-
-var app = module.exports = express.createServer();
-
-// Configuration
-
-app.configure(function(){
-  app.set('views', __dirname + '/views');
-  app.set('view engine', 'jade');
-  app.use(express.bodyParser());
-  app.use(express.methodOverride());
-  app.use(app.router);
-  app.use(express.static(__dirname + '/public'));
+app.use(flatiron.plugins.http, {
+  // HTTP options
 });
 
-app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+app.http.before = [
+	ecstatic(__dirname + '/public')
+];
+
+//
+// app.router is now available. app[HTTP-VERB] is also available
+// as a shortcut for creating routes
+//
+app.router.get('/version', function () {
+  this.res.writeHead(200, { 'Content-Type': 'text/plain' });
+  this.res.end('flatiron ' + flatiron.version);
 });
 
-app.configure('production', function(){
-  app.use(express.errorHandler());
+//Get the the update sequence of the dbase and start following changes
+couch.info(function(err, info){
+  if (err){
+    console.log(logId, "ERROR getting update sequence when starting to monitor couch changes: " + JSON.stringify(err));
+  } else {
+    var since = info.update_seq;
+    //start the changes stream using the latest sequence
+    var dbUrl = 'http://'+ couchOpts.host + ':' + couchOpts.port + '/' + settings.config.couchName;
+    //console.log("URL", dbUrl);
+    follow({db:dbUrl, since: since, include_docs:true}, function(error, change) {
+      if(!error) {
+        Alert.handleChange(change);
+      }
+    });
+  }
 });
 
-// Routes
 
-app.get('/', routes.index);
 
-app.listen(3000, function(){
-  console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
-});
+
+app.start(8090);

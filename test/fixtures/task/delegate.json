@@ -1,0 +1,251 @@
+{
+   "_id": "f0299f043850d43935f9f8175e0056f5",
+   "_rev": "6-4492bc5f77f284e11448ec99a5d78cc0",
+   "name": "Test delegate everything",
+   "purpose": "Here is the purpose of this task. It's wordy so it's got lots of words.\n\nNow a new line to make sure that it's breaking correctly.",
+   "project": "5de7629e94e88f7db2acceab7a027a75",
+   "deadline": "2012-07-30T14:00:00-04:00",
+   "username": "1",
+   "calendar": {
+       "start": "2012-07-27T00:00:00-04:00"
+   },
+   "workspace": [
+       {
+           "_id": "446864b68cca65ee0369c19560029d34",
+           "_rev": "1-c64a6219b9e5de0875a2fd3cf4982d4f",
+           "docType": "template",
+           "templateType": "deliverable",
+           "multipart": false,
+           "fields": [
+               {
+                   "value": "",
+                   "default": "file field",
+                   "required": false,
+                   "primitiveType": "url",
+                   "label": "File",
+                   "fieldType": "input",
+                   "id": "f0299f043850d43935f9f8175e005cbf",
+                   "position": "full",
+                   "order": "0",
+                   "inputType": "file",
+                   "size": "large",
+                   "data": {
+                       "ready": false,
+                       "variables": [
+                       ]
+                   },
+                   "hasDefault": false,
+                   "hasSize": false,
+                   "isInput": false,
+                   "isFile": true,
+                   "rev": null
+               }
+           ],
+           "instructions": "Upload deliverable file here",
+           "id": "f0299f043850d43935f9f8175e005866",
+           "name": "File",
+           "organization": "coordel.com",
+           "username": "2",
+           "isUserTemplate": true,
+           "isActive": true,
+           "templateId": "180efe932ec61ff0fec30a70af1dc4ae",
+           "updated": "2012-07-25T12:53:24.626-04:00",
+           "created": "2012-07-25T12:53:24.626-04:00"
+       },
+       {
+           "_id": "446864b68cca65ee0369c1956002b918",
+           "_rev": "1-73a714ad0b2f8f139616cf50aecfdb12",
+           "docType": "template",
+           "templateType": "deliverable",
+           "id": "f0299f043850d43935f9f8175e00620b",
+           "multipart": false,
+           "fields": [
+               {
+                   "value": "",
+                   "versions": [
+                   ],
+                   "default": "",
+                   "required": false,
+                   "primitiveType": "string",
+                   "label": "Textarea",
+                   "fieldType": "textarea",
+                   "position": "full",
+                   "order": "0",
+                   "size": "medium",
+                   "id": "f0299f043850d43935f9f8175e006413",
+                   "hasDefault": true,
+                   "hasSize": true,
+                   "isTextarea": true,
+                   "sizes": [
+                       {
+                           "id": "x-small",
+                           "value": "x-small"
+                       },
+                       {
+                           "id": "small",
+                           "value": "small"
+                       },
+                       {
+                           "id": "medium",
+                           "value": "medium"
+                       },
+                       {
+                           "id": "large",
+                           "value": "large"
+                       },
+                       {
+                           "id": "x-large",
+                           "value": "x-large"
+                       }
+                   ]
+               }
+           ],
+           "instructions": "Enter text",
+           "name": "Textarea",
+           "organization": "coordel.com",
+           "username": "2",
+           "isUserTemplate": true,
+           "isActive": true,
+           "templateId": "180efe932ec61ff0fec30a70af1db23c",
+           "updated": "2012-07-25T12:53:27.777-04:00",
+           "created": "2012-07-25T12:53:27.777-04:00"
+       },
+       {
+           "_id": "446864b68cca65ee0369c195600298b7",
+           "_rev": "1-5d39afec9bce7f18da46ecb4564b32fd",
+           "docType": "template",
+           "templateType": "deliverable",
+           "multipart": false,
+           "fields": [
+               {
+                   "value": "1002",
+                   "default": "1001",
+                   "required": false,
+                   "primitiveType": "string",
+                   "label": "Dropdown List",
+                   "fieldType": "select",
+                   "position": "full",
+                   "order": "0",
+                   "children": [
+                       {
+                           "id": "f0299f043850d43935f9f8175e007e0e",
+                           "value": false,
+                           "label": "Option 1"
+                       },
+                       {
+                           "id": "f0299f043850d43935f9f8175e008c78",
+                           "value": true,
+                           "label": "Option 2"
+                       },
+                       {
+                           "id": "f0299f043850d43935f9f8175e008f32",
+                           "value": false,
+                           "label": "Option 3"
+                       }
+                   ],
+                   "size": "medium",
+                   "id": "f0299f043850d43935f9f8175e007995",
+                   "hasDefault": false,
+                   "hasSize": true,
+                   "isSelect": true,
+                   "sizes": [
+                       {
+                           "id": "x-small",
+                           "value": "x-small"
+                       },
+                       {
+                           "id": "small",
+                           "value": "small"
+                       },
+                       {
+                           "id": "medium",
+                           "value": "medium"
+                       },
+                       {
+                           "id": "large",
+                           "value": "large"
+                       },
+                       {
+                           "id": "x-large",
+                           "value": "x-large"
+                       }
+                   ]
+               }
+           ],
+           "instructions": "Select one",
+           "id": "f0299f043850d43935f9f8175e0071d9",
+           "name": "Dropdown List",
+           "organization": "coordel.com",
+           "username": "2",
+           "isUserTemplate": true,
+           "isActive": true,
+           "templateId": "180efe932ec61ff0fec30a70af1db733",
+           "updated": "2012-07-25T12:53:31.565-04:00",
+           "created": "2012-07-25T12:53:31.565-04:00"
+       }
+   ],
+   "status": "CURRENT",
+   "substatus": "DELEGATED",
+   "responsible": "2",
+   "docType": "task",
+   "isTemplate": false,
+   "isMyPrivate": false,
+   "isMyDelegated": false,
+   "history": [
+       {
+           "actor": {
+               "id": "2",
+               "name": "Dev Coordel",
+               "type": "PERSON"
+           },
+           "object": {
+               "id": "f0299f043850d43935f9f8175e0056f5",
+               "name": "Test delegate everything",
+               "type": "TASK"
+           },
+           "time": "2012-07-25T12:53:44.091-04:00",
+           "verb": "DELEGATE",
+           "target": {
+               "id": "5de7629e94e88f7db2acceab7a027a75",
+               "name": "Test invite from DEV",
+               "type": "PROJECT"
+           },
+           "icon": "ui-icon-arrowthick-1-e"
+       },
+       {
+           "actor": {
+               "id": "2",
+               "name": "Dev Coordel",
+               "type": "PERSON"
+           },
+           "object": {
+               "id": "f0299f043850d43935f9f8175e0056f5",
+               "name": "Test delegate everything",
+               "type": "TASK"
+           },
+           "time": "2012-07-25T12:53:44.091-04:00",
+           "verb": "POST",
+           "target": {
+               "id": "5de7629e94e88f7db2acceab7a027a75",
+               "name": "Test invite from DEV",
+               "type": "PROJECT"
+           },
+           "icon": "ui-icon-plus"
+       }
+   ],
+   "role": "5de7629e94e88f7db2acceab7a03129b",
+   "created": "2012-07-25T12:53:44.093-04:00",
+   "updated": "2012-07-25T12:53:44.093-04:00",
+   "creator": "2",
+   "updater": "2",
+   "isNew": true,
+   "_attachments": {
+       "home-check.png": {
+           "content_type": "image/png",
+           "revpos": 1,
+           "digest": "md5-u4IlA+c+9iYBa/N2luyk5Q==",
+           "length": 55249,
+           "stub": true
+       }
+   }
+}

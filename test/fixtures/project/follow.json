@@ -1,0 +1,100 @@
+{
+   "_id": "5de7629e94e88f7db2acceab7a074b4e",
+   "_rev": "7-d2e738fefbff3eb5211c87d4a3aa535d",
+   "docType": "project",
+   "responsible": "1",
+   "users": [
+       "1",
+       "2"
+   ],
+   "assignments": [
+       {
+           "username": "1",
+           "role": "RESPONSIBLE",
+           "status": "ACCEPTED"
+       },
+       {
+           "username": "2",
+           "role": "FOLLOWER",
+           "status": "ACCEPTED"
+       }
+   ],
+   "name": "Test adding a coord",
+   "status": "ACTIVE",
+   "substatus": "SENT",
+   "deadline": "2012-08-01",
+   "isMyDelegated": false,
+   "isMyPrivate": false,
+   "isTemplate": false,
+   "created": "2012-07-25T09:21:26.742-04:00",
+   "updated": "2012-07-25T09:23:50.879-04:00",
+   "creator": "1",
+   "updater": "2",
+   "isNew": false,
+   "history": [
+       {
+           "actor": {
+               "id": "2",
+               "name": "Dev Coordel",
+               "type": "PERSON"
+           },
+           "object": {
+               "id": "5de7629e94e88f7db2acceab7a074b4e",
+               "name": "Test adding a coord",
+               "type": "PROJECT"
+           },
+           "time": "2012-07-25T09:23:50.865-04:00",
+           "users": [
+               "1",
+               "2"
+           ],
+           "verb": "FOLLOW",
+           "icon": "ui-icon-arrowthick-2-e-w"
+       },
+       {
+           "actor": {
+               "id": "1",
+               "name": "Jeff Gorder",
+               "type": "PERSON"
+           },
+           "object": {
+               "id": "5de7629e94e88f7db2acceab7a074b4e",
+               "name": "Test adding a coord",
+               "type": "PROJECT"
+           },
+           "time": "2012-07-25T09:21:50.723-04:00",
+           "users": [
+               "1",
+               "2"
+           ],
+           "verb": "POST",
+           "icon": "ui-icon-plus",
+           "body": ""
+       },
+       {
+           "actor": {
+               "id": "1",
+               "name": "Jeff Gorder",
+               "type": "PERSON"
+           },
+           "object": {
+               "id": "2",
+               "name": "Dev Coordel",
+               "type": "PERSON"
+           },
+           "time": "2012-07-25T09:21:35.822-04:00",
+           "users": [
+               "1",
+               "2"
+           ],
+           "target": {
+               "id": "5de7629e94e88f7db2acceab7a074b4e",
+               "name": "Test adding a coord",
+               "type": "PROJECT"
+           },
+           "verb": "INVITE",
+           "icon": "ui-icon-arrowreturnthick-1-e"
+       }
+   ],
+   "purpose": "Here is the purpose. \n\nLine break"
+}

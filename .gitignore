@@ -1,2 +1,3 @@
 .DS_Store
-node_modules/
+config/settings.development.json
+config/settings.production.json

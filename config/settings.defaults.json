@@ -1,0 +1,86 @@
+{
+  "version": "/0.0.1",
+  "url" : "beta.coordel.com",
+  "auth" : {
+    "fb": {
+      "appId": "145674338818252", 
+      "appSecret": "937018cf2c75b9eaced798864f7f4ebd"
+    }, 
+    "twitter": {
+      "consumerKey": "ofbkKDfUpLqBQHakhdBytw", 
+      "consumerSecret": "GM3lLmIaKVGUddiU65G4MMrG9pMfNGN8pVuVcNSiCoU"
+    }, 
+    "linkedin": {
+      "apiKey": "uaq9f87fwvkp", 
+      "apiSecret": "2AhwrRhR2KkCfJSh"
+    }, 
+    "google": {
+      "clientId": "570025906568.apps.googleusercontent.com", 
+      "clientSecret": "wBCkg3nW9-hgwmVlP8V6_DDc"
+    }
+  },
+  "config" : {
+    "redisOptions":{
+      "host": "barreleye.redistogo.com",
+      "port": 9351,
+      "db": "coordel",
+      "expressSessionPrefix": "sessions",
+      "auth": "4dbd78fa8e5679b37d9df21324c0c85e"
+    },
+
+    "couchOptions":{
+      "host": "coordel.iriscouch.com",
+      "port": 5984,
+      "auth": {"username": "admin", "password": "admin1129"},
+      "cache": false
+    },
+    
+    "couchName": "coordel-pre",
+    
+    "logglyOptions": {
+      "subdomain": "coordel",
+      "auth": {
+        "username": "coordelloggly",
+        "password": "coordel1129"
+      }
+    },
+    
+    "logId": "dc5b9381-331b-4d0e-88a2-b598707260f1",
+    
+    "corpLogglyOptions": {
+      "subdomain": "coordel",
+      "auth": {
+        "username": "coordelloggly",
+        "password": "coordel1129"
+      },
+      "json": true
+    },
+    
+    
+    "corpLogId": "a9ca9bbc-d314-4a31-9223-d0a59e37a52e",
+    
+    "sendgridOptions": {
+      "host" : "smtp.sendgrid.net",           
+      "port" : "587",
+      "domain" : "coordel.com", 
+      "username" : "dev@coordel.com",
+      "password": "dev1129",
+      "url": "dev.coordel.com:8085"
+    },
+    
+    "s3Options": {
+      "key": "AKIAJIHREYPSRX3VGQOQ", 
+      "secret": "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", 
+      "bucket": "coordel-files"
+    }
+  },
+  
+  "allowFullAccess": false,
+  
+  "allowLimitedAccess": false, 
+  
+  "allowProviderLogin": false,
+  
+  "admins": ["jeff.gorder@coordel.com"]
+    
+}

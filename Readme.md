@@ -2,4 +2,4 @@
 
 ![coordel logo](http://beta.coordel.com/clients/web/0.0.1/css/images/logos/black-30.png)
 
-  Email notifications and sending for Coordel applications.
+  Email notifications and delivery for Coordel applications.
