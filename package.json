@@ -26,7 +26,7 @@
       "nodemailer": "0.3.21",
       "redis": "0.7.2",
       "ecstatic": "0.1.6",
-      "dateformat": "1.2.3",
+      "dateformat": "*",
       "winston": "0.6.2"
     }
   , "devDependencies": {
