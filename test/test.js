@@ -42,15 +42,7 @@ describe('project fields', function(){
       done();
     });
   });
-  it('should return a deadline property', function(done){
-    Project.getTemplate({change:{
-      deadline: "2012-07-07T02:42:10.760Z",
-      users: ['1']}, alert: {}, username:'1'
-    }, function(err, template){
-      template.should.equal('<p><strong id="label">Deadline</strong>: <span id="value">Friday, July 6th, 2012, 10:42:10 PM</span></p>');
-      done();
-    });
-  });
+ 
   it('should return a responsible property', function(done){
     Project.getTemplate({change: {
       responsible: '1',
@@ -63,17 +55,7 @@ describe('project fields', function(){
   
   
   
-  it('should return a starts property', function(done){
-    Project.getTemplate({change:{
-      users: ['1'],
-      calendar: {
-        start: "2012-07-31T00:00:00-04:00"
-      }},alert:{},username:'1'
-    }, function(err, template){
-      template.should.equal('<p><strong id="label">Starts</strong>: <span id="value">Tuesday, July 31st, 2012, 12:00:00 AM</span></p>');
-      done();
-    });
-  });
+ 
   
 });
 
