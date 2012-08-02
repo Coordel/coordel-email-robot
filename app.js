@@ -8,7 +8,9 @@ var settings    = require('./config/index').settings("settings", "./config"),
     cn          = new cradle.Connection(),
     couch       = cn.database(couchName),
     follow      = require('follow'),
-    Alert       = require('./lib/alert');
+    Alert       = require('./lib/alert'),
+    Common      = require('./lib/common'),
+    fs          = require('fs');
 
 app.use(flatiron.plugins.http, {
   // HTTP options
@@ -25,6 +27,31 @@ app.http.before = [
 app.router.get('/version', function () {
   this.res.writeHead(200, { 'Content-Type': 'text/plain' });
   this.res.end('flatiron ' + flatiron.version);
+});
+
+app.router.get('/features', function() {
+  var features = [];
+  var tips = [];
+  var nls = JSON.parse(fs.readFileSync( __dirname +'/lib/nls/nls-alert.json', 'utf8'));
+  //randomize the features for updates
+  
+
+  
+  
+  for (var key in nls.features.productivity) {
+    var source = nls.features.productivity[key];
+    var tip = {};
+    tip.feature = source.feature;
+    tip.featureHeadline = source.headline;
+    tip.featureDescription = source.description;
+    tips.push(tip);
+  };
+  
+  this.res.writeHead(200, { 'Content-Type': 'text/html' });
+  var list = Common.render(Common.getHtml('feature','html'),{tips: tips});
+  var html = Common.render(Common.getHtml('feature-list','html'), {features: list});
+  this.res.write(html);
+  this.res.end();
 });
 
 //Get the the update sequence of the dbase and start following changes

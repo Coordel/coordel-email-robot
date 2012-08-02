@@ -32,15 +32,7 @@ describe('common functions', function(){
 });
 
 describe('project fields', function(){
-  it('should return a name property', function(done){
-    Project.getTemplate({change: {
-      name: "Here is the name of this thing",
-      users: ['1']}, alert: {}, username:'1'
-    }, function(err, template){
-      template.should.equal('<p><strong id="label">Name</strong>: <span id="value">Here is the name of this thing</span></p>');
-      done();
-    });
-  });
+ 
   it('should return a purpose property', function(done){
     Project.getTemplate({change:{
       purpose: "Here is the purpose of this thing",
@@ -69,16 +61,7 @@ describe('project fields', function(){
     });
   });
   
-  it('should return a users partial', function(done){
-    Project.getTemplate({change:{
-    
-      responsible: '1',
-      users: ['1','2']}, alert:{},username:'2'
-    }, function(err, template){
-      template.should.equal('<p><strong id="label">Responsible</strong>: <span id="value">Jeff Gorder</span></p><p><strong id="label">People</strong>:<ul><li class="users"><div><span class="firstName">Jeff</span> <span class="lastName">Gorder</span></div><div><span class="email">jeff.gorder@coordel.com</span></div><br/></li><li class="users"><div><span class="firstName">Dev</span> <span class="lastName">Coordel</span></div><div><span class="email">dev@coordel.com</span></div><br/></li></ul></p>');
-      done();
-    });
-  });
+  
   
   it('should return a starts property', function(done){
     Project.getTemplate({change:{
@@ -122,7 +105,7 @@ describe('task functions', function(){
     options.change = get('task/update');
     options.alert = options.change.history.shift();
     Task.getTemplate(options, function(err, template){
-      console.log("template", template);
+   
       done();
     });
   });
