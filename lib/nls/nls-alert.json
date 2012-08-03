@@ -30,7 +30,7 @@
       "p1": {
         "feature": "deadline calendar",
         "headline": "Track all deadlines in one place",
-        "description": ["Rather than making an entry in your calendar when you need to do something, Coordel automatically organizes all of your Tasks into one place.", "All Coords have a deadline. Tasks can have deadlines, but if they don't, they get the deadline of the Coord. Deadlines help avoid confusion. When something is due at 2:00 this afternoon, everyone knows what that means. No more my priority isn't the same as your priority!"]
+        "description": ["Rather than making an entry in your calendar when you need to do something, Coordel automatically organizes by deadline all of your tasks into one place.", "All Coords have a deadline. Tasks can have deadlines, but if they don't, they get the deadline of the Coord. Deadlines help avoid confusion. When something is due at 2:00 this afternoon, everyone knows what that means. No more my priority isn't the same as your priority!"]
       },
       "p2": {
         "feature": "explicit invitations",
@@ -40,11 +40,11 @@
       "p3": {
         "feature": "explict issue handling",
         "headline": "Raise and Clear Issues in real time",
-        "description": ["Avoid miscommunication when you discover an Issue. Coordel let's you easily raise an issue with the Task. Ownership transfers immediately to the Coord Responsible to Clear it."]
+        "description": ["Avoid miscommunication when you discover an Issue. Coordel lets you easily raise an issue with the Task. Ownership transfers immediately to the Coord Responsible to Clear it."]
       },
       "p4": {
         "feature": "explicit done",
-        "headline": "Submit Done Tasks and get Agreement from the Responsible",
+        "headline": "Submit Done Tasks and get Agreement from the Coord Responsible",
         "description": ["Rather than think you're done and find out later you're not, Coordel provides a built-in agreement process so everyone knows work is done."]
       },
       "p5": {
@@ -60,17 +60,17 @@
       "p7": {
         "feature": "deferred tasks",
         "headline": "Control when you start work",
-        "description": ["Avoid confusion about when you'll start to do your work. Set the defer date to when you intend to start work on the Task and everyone who matters will be notified. That way, if there are any problems, they can get raised right away."]
+        "description": ["Avoid confusion about when you'll start to do your work. Set the defer date to when you intend to start work on the Task and everyone who matters will be notified."]
       },
       "p8": {
         "feature": "delegated tasks",
         "headline": "Remember who you've asked to do work",
-        "description": ["Coordel distributes authority and responsiblility widely as possible. Sometimes, you are the expert and will do the work. Sometimes, you're not and will ask someone else to do it. With Coordel you can easily track your delegated tasks"]
+        "description": ["Coordel distributes authority and responsiblility widely as possible. Sometimes, you are the expert and will do the work. Sometimes, you're not and will ask someone else to do it. With Coordel you can easily track your delegated tasks."]
       },
       "p9": {
         "feature": "blocked tasks",
         "headline": "Set it and forget it",
-        "description": ["Rather than sending e-mails and making phone calls to find out if someone is done with work you're waiting for, Coordel let's you set what tasks are blocking you and then notifies you immediately when they are ready."]
+        "description": ["Rather than sending e-mails and making phone calls to find out if someone is done with work you're waiting for, Coordel lets you set what tasks are blocking you and then notifies you immediately when they are completed."]
       },
       "p10": {
         "feature": "private tasks",
@@ -80,7 +80,7 @@
       "p11": {
         "feature": "turbo wizard",
         "headline": "Get your day started",
-        "description": ["Don't get overwhelmed by the work on your plate. Turbo through it by choosing one of three actions: do it, delegete it, or defer it . . . and you're done."]
+        "description": ["Don't get overwhelmed by the work on your plate. Turbo through it by choosing one of three actions: do it, delegete it, or defer it . . . and you're ready to begin."]
       } 
     },
     "opportunity": {
