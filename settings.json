@@ -1,6 +1,7 @@
 {
   "version": "",
-  "url": "dev.coordel.com:8080",
+  "coordelUrl": "dev.coordel.com:8080",
+  "url": "dev.coordel.com:8090",
   "config": {
     "redisOptions": {
       "host": "herring.redistogo.com",

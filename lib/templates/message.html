@@ -1,13 +1,15 @@
-<layout label="Text with full-width image">
+<layout label="Message">
   <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
     <tbody>
       <tr>
         <td class="w580" width="580">
-	      <p align="left" class="article-content-large"><span id="from">From Sender</span> <strong id="verb">sent</strong> you the following message on <a href="http://coordel.com">Coordel</a>:</p>
-	      <div class="indented">
-		      <p id="message" align="left" class="article-content-large"></p>
-	      </div>
-        </td>
+          <div id="message-balloon">
+		        <blockquote><p id="message"></p></blockquote>
+		        
+		        <cite><div><strong id="messageSender" style="font-size:14px">Sender</strong></div> <div align="left" class="small-label" id="time">Time</div></cite>
+		      </div>
+		      <p>&nbsp;</p>
+        </td> 
       </tr>
       <tr>
         <td class="w580" width="580" height="10"></td>

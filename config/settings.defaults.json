@@ -1,6 +1,7 @@
 {
-  "version": "/0.0.1",
-  "url" : "beta.coordel.com",
+  "version": "0.0.1",
+  "coordelUrl": "beta.coordel.com",
+  "url" : "coordel-email-robot.nodejitsu.com",
   "auth" : {
     "fb": {
       "appId": "145674338818252", 
