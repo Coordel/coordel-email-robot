@@ -1,25 +1,7 @@
 {
   "version": "0.0.1",
-  "coordelUrl": "beta.coordel.com",
-  "url" : "coordel-email-robot.nodejitsu.com",
-  "auth" : {
-    "fb": {
-      "appId": "145674338818252", 
-      "appSecret": "937018cf2c75b9eaced798864f7f4ebd"
-    }, 
-    "twitter": {
-      "consumerKey": "ofbkKDfUpLqBQHakhdBytw", 
-      "consumerSecret": "GM3lLmIaKVGUddiU65G4MMrG9pMfNGN8pVuVcNSiCoU"
-    }, 
-    "linkedin": {
-      "apiKey": "uaq9f87fwvkp", 
-      "apiSecret": "2AhwrRhR2KkCfJSh"
-    }, 
-    "google": {
-      "clientId": "570025906568.apps.googleusercontent.com", 
-      "clientSecret": "wBCkg3nW9-hgwmVlP8V6_DDc"
-    }
-  },
+  "coordelUrl": "demos.coordel.com",
+  "url" : "coordel-demos.nodejitsu.com",
   "config" : {
     "redisOptions":{
       "host": "barreleye.redistogo.com",

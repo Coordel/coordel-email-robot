@@ -1,14 +1,12 @@
 {
   "version": "",
-  "coordelUrl": "dev.coordel.com:8080",
-  "url": "dev.coordel.com:8090",
   "config": {
     "redisOptions": {
-      "host": "herring.redistogo.com",
-      "port": 9121,
+      "host": "dev.coordel.com",
+      "port": 6379,
       "db": "redis-dev",
       "expressSessionPrefix": "sessions",
-      "auth": "4f76ad5b5c91a1fe1cdd2de070b61da7"
+      "auth": "password"
     },
     "couchOptions":{
       "host": "localhost",
@@ -16,7 +14,6 @@
       "auth": {"username": "admin", "password": "password"},
       "cache": false
     },
-    "couchName": "coordel-dev",
     "sendgridOptions": {
       "host" : "smtp.sendgrid.net",           
       "port" : "587",
@@ -24,6 +21,7 @@
       "username" : "dev@coordel.com",
       "password": "dev1129",
       "url": "dev.coordel.com:8085"
-    }
+    },
+    "couchName": "coordel-dev"
   }
 }
