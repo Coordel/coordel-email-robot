@@ -1,5 +1,9 @@
-![Build Status](https://secure.travis-ci.org/jeffgorder/coordel-email-robot.png)
+# Coordel E-mail Robot Application
+Email notifications and delivery for Coordel applications.
 
-![coordel logo](http://beta.coordel.com/clients/web/0.0.1/css/images/logos/black-30.png)
+[https://coordel.com](https://coordel.com)
 
-  Email notifications and delivery for Coordel applications.
+# License
+MIT
+
+  
